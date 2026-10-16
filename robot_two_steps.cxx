@@ -63,9 +63,9 @@ public:
 			case 2:
 			Jacob = Matrix2{point{-(first.a +second.q)*sin(first.q), cos(first.q)}, point{-(first.a + second.q)*cos(first.q),-sin(first.q)}};
 			case 3:
-			return Matrix2{point{0,0}, point{0,0}};
+			Jacob = Matrix2{point{0,0}, point{0,0}};
 			case 4:
-			return Matrix2{point{0,0}, point{0,0}};
+			Jacob =  Matrix2{point{0,0}, point{0,0}};
 		}
 		
 	}
@@ -299,7 +299,7 @@ int main()
 				p.y = e.tfinger.y * screen_y;
 				current -> data.i = 0;
 				std::cout << p.x << ", " << p.y << std::endl;
-				SDL_SetRenderDrawColor(render, 50,50,50,50);
+				SDL_SetRenderDrawColor(render,50,50,50,50);
 				}
 			}
 			 
